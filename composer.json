@@ -45,7 +45,7 @@
   "autoload": {
     "psr-4": {
       "Redfox\\Container\\": "packages/container/src/",
-      "Redfox\\Container\\Tests\\Unit\\": "packages/container/tests/unit/"
+      "Redfox\\Container\\Tests\\Unit\\": "tests/unit/packages/container/"
     }
   },
   "autoload-dev": {},

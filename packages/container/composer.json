@@ -28,8 +28,7 @@
   "require-dev": {},
   "autoload": {
     "psr-4" : {
-      "Redfox\\Container\\": "src",
-      "Redfox\\Container\\Tests\\Unit\\": "tests/unit"
+      "Redfox\\Container\\": "src"
     }
   },
   "autoload-dev": {}
