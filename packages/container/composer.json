@@ -1,0 +1,36 @@
+{
+  "name": "cyberfox/redfox-container",
+  "description": "",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "type": "library",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Cyberfox Software Solutions e.U.",
+      "email": "office@cyberfox.at",
+      "homepage": "http://cyberfox.at"
+    },
+    {
+      "name": "Christian Graf",
+      "email": "fox@cyberfox.at"
+    }
+  ],
+  "keywords": [
+    "redfox",
+    "container",
+    "data abstract layer",
+    "data"
+  ],
+  "require": {
+    "php": ">=5.6.18"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4" : {
+      "Redfox\\Container\\": "src",
+      "Redfox\\Container\\Tests\\Unit\\": "tests/unit"
+    }
+  },
+  "autoload-dev": {}
+}
