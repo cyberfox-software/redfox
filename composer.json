@@ -39,11 +39,19 @@
     "friendsofphp/php-cs-fixer": "^2.3.0",
     "mockery/mockery": "~0.9.0"
   },
-  "autoload": {},
+  "replace": {
+    "cyberfox/redfox-container": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "Redfox\\Container\\": "packages/container/src/",
+      "Redfox\\Container\\Tests\\Unit\\": "packages/container/tests/unit/"
+    }
+  },
   "autoload-dev": {},
   "scripts": {
     "test": "vendor/bin/phpunit",
     "style-check": "vendor/bin/php-cs-fixer fix --dry-run",
-    "style-fix": "vendor/bin/php-cs-fixer fix",
+    "style-fix": "vendor/bin/php-cs-fixer fix"
   }
 }
