@@ -2,9 +2,9 @@
 
 namespace Redfox\Container;
 
+use Redfox\Container\Support\ValidatesOffsetTrait;
 use Redfox\Container\Contracts\DataObjectInterface;
 use Redfox\Container\Exceptions\BadPropertyCallException;
-use Redfox\Container\Support\ValidatesOffsetTrait;
 
 class DataObject implements DataObjectInterface
 {
@@ -37,7 +37,7 @@ class DataObject implements DataObjectInterface
     /**
      * {@inheritdoc}
      *
-     * @throws \InvalidArgumentException if the designated property name is not valid
+     * @throws \InvalidArgumentException                             if the designated property name is not valid
      * @throws \Redfox\Container\Exceptions\BadPropertyCallException if strict mode is on and the designated property does not exist or is not accessible
      */
     public function getProperty($name, $fallbackValue = null)
@@ -58,7 +58,7 @@ class DataObject implements DataObjectInterface
     /**
      * {@inheritdoc}
      *
-     * @throws \InvalidArgumentException if the designated property name is not valid
+     * @throws \InvalidArgumentException                             if the designated property name is not valid
      * @throws \Redfox\Container\Exceptions\BadPropertyCallException if strict mode is on and the designated property does not exist or is not accessible
      */
     public function setProperty($name, $value)

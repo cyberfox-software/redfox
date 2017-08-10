@@ -5,7 +5,7 @@ namespace Redfox\Container\Tests\Unit\Mocks;
 use Redfox\Container\Support\AccessorTrait;
 
 /**
- * Class AccessorMock
+ * Class AccessorMock.
  *
  * @property string $foo
  */
@@ -26,7 +26,5 @@ class AccessorMock
      */
     protected function setPropertyFoo($value)
     {
-        return;
     }
-
 }

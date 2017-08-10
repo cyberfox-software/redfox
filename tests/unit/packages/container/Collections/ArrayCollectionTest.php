@@ -100,6 +100,7 @@ class ArrayCollectionTest extends \PHPUnit_Framework_TestCase
      * Test.
      *
      * @dataProvider getInvalidOffsetCollection
+     *
      * @param mixed $invalid
      */
     public function testImplementationArrayAccessOffsetGetThrowsInvalidArgumentException($invalid)
@@ -144,6 +145,7 @@ class ArrayCollectionTest extends \PHPUnit_Framework_TestCase
      * Test.
      *
      * @dataProvider getInvalidOffsetCollection
+     *
      * @param mixed $invalid
      */
     public function testImplementationArrayAccessOffsetSetThrowsInvalidArgumentException($invalid)
@@ -188,6 +190,7 @@ class ArrayCollectionTest extends \PHPUnit_Framework_TestCase
      * Test.
      *
      * @dataProvider getInvalidOffsetCollection
+     *
      * @param mixed $invalid
      */
     public function testImplementationArrayAccessOffsetUnsetThrowsInvalidArgumentException($invalid)
@@ -251,7 +254,7 @@ class ArrayCollectionTest extends \PHPUnit_Framework_TestCase
     {
         /** @var ArrayCollection|\PHPUnit_Framework_MockObject_MockObject $collection */
         $collection = $this->getMockBuilder(ArrayCollection::class)
-            ->setConstructorArgs([ $this->testData ])
+            ->setConstructorArgs([$this->testData])
             ->setMethods(['offsetExists', 'key'])
             ->getMock();
 
@@ -301,11 +304,10 @@ class ArrayCollectionTest extends \PHPUnit_Framework_TestCase
     public function getInvalidOffsetCollection()
     {
         return [
-            [ [] ],
-            [ null ],
-            [ (object)['foo' => 'bar'] ],
-            [ 23.45 ],
+            [[]],
+            [null],
+            [(object) ['foo' => 'bar']],
+            [23.45],
         ];
     }
-
 }

@@ -9,14 +9,14 @@ class ArrayCollection implements \ArrayAccess, \Iterator, \Countable
     use ValidatesOffsetTrait;
 
     /**
-     * the raw data collection
+     * the raw data collection.
      *
      * @var array
      */
     protected $data = [];
 
     /**
-     * Factory
+     * Factory.
      *
      * Usage:
      * ```php
@@ -47,8 +47,10 @@ class ArrayCollection implements \ArrayAccess, \Iterator, \Countable
      *
      * @see http://php.net/manual/en/arrayaccess.offsetexists.php
      *
-     * @param string|integer $offset
+     * @param string|int $offset
+     *
      * @return bool
+     *
      * @throws \InvalidArgumentException if the designated offset is invalid
      */
     public function offsetExists($offset)
@@ -63,8 +65,10 @@ class ArrayCollection implements \ArrayAccess, \Iterator, \Countable
      *
      * @see http://php.net/manual/en/arrayaccess.offsetget.php
      *
-     * @param string|integer $offset
+     * @param string|int $offset
+     *
      * @return mixed
+     *
      * @throws \InvalidArgumentException if the designated offset is invalid
      */
     public function offsetGet($offset)
@@ -79,8 +83,9 @@ class ArrayCollection implements \ArrayAccess, \Iterator, \Countable
      *
      * @see http://php.net/manual/en/arrayaccess.offsetset.php
      *
-     * @param string|integer $offset
-     * @param mixed $value
+     * @param string|int $offset
+     * @param mixed      $value
+     *
      * @throws \InvalidArgumentException if the designated offset is invalid
      */
     public function offsetSet($offset, $value)
@@ -95,9 +100,9 @@ class ArrayCollection implements \ArrayAccess, \Iterator, \Countable
      *
      * @see http://php.net/manual/en/arrayaccess.offsetunset.php
      *
-     * @param string|integer $offset
-     * @throws \InvalidArgumentException if the designated offset is invalid
+     * @param string|int $offset
      *
+     * @throws \InvalidArgumentException if the designated offset is invalid
      */
     public function offsetUnset($offset)
     {
