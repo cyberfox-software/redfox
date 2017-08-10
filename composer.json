@@ -1,0 +1,49 @@
+{
+  "name": "cyberfox/redfox",
+  "description": "A lightweight library of useful snippets, classes and tools for fast and simplified software development with PHP.",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "type": "library",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Cyberfox Software Solutions e.U.",
+      "email": "office@cyberfox.at",
+      "homepage": "https://cyberfox.at"
+    },
+    {
+      "name": "Christian Graf",
+      "email": "fox@cyberfox.at"
+    }
+  ],
+  "keywords": [
+    "library",
+    "snippet",
+    "tool",
+    "tool set",
+    "lightweight"
+  ],
+  "repositories": [
+    {
+      "type": "path",
+      "url": "./packages/*"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.18"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "^1.6.0",
+    "phpunit/phpunit": "^5.7.0",
+    "friendsofphp/php-cs-fixer": "^2.3.0",
+    "mockery/mockery": "~0.9.0"
+  },
+  "autoload": {},
+  "autoload-dev": {},
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "style-check": "vendor/bin/php-cs-fixer fix --dry-run",
+    "style-fix": "vendor/bin/php-cs-fixer fix",
+  }
+}
