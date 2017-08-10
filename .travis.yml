@@ -4,6 +4,7 @@ php:
   - 5.6.18
   - 7.0
   - 7.1
+  - 7.2
 
 # faster builds on new travis setup not using super user
 sudo: false
