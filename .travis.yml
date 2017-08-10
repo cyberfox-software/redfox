@@ -9,16 +9,23 @@ php:
 # faster builds on new travis setup not using super user
 sudo: false
 
+# matrix
+matrix:
+  allow_failures:
+    - php: 7.2
+
 # cache vendor dirs
 cache:
   directories:
     - vendor
     - $HOME/.composer/cache
 
-install:
+before_install:
   - travis_retry composer self-update && composer --version
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
-  - travis_retry composer install --prefer-dist --no-interaction
+
+install:
+  - travis_retry composer install --prefer-dist --no-interaction --no-suggest
 
 script:
-  - vendor/bin/phpunit --verbose
+  - vendor/bin/phpunit
