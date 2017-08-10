@@ -24,10 +24,10 @@
         verbose="false">
     <testsuites>
         <testsuite name="default">
-            <directory>packages/*/tests/unit/</directory>
+            <directory>tests/unit/</directory>
         </testsuite>
         <testsuite name="integration">
-            <directory>packages/*/tests/integration/</directory>
+            <directory>tests/integration/</directory>
         </testsuite>
     </testsuites>
     <filter>

@@ -3,9 +3,9 @@
 namespace Redfox\Container\Tests\Unit\Support;
 
 use Redfox\Container\DataObject;
+use Redfox\Container\StrictDataObject;
 use Redfox\Container\Contracts\DataObjectInterface;
 use Redfox\Container\Exceptions\BadPropertyCallException;
-use Redfox\Container\StrictDataObject;
 
 class DataObjectTest extends \PHPUnit_Framework_TestCase
 {
@@ -82,6 +82,7 @@ class DataObjectTest extends \PHPUnit_Framework_TestCase
      * Test.
      *
      * @dataProvider getInvalidOffsetCollection
+     *
      * @param mixed $invalid
      */
     public function testSetPropertyThrowsInvalidArgumentException($invalid)
@@ -141,6 +142,7 @@ class DataObjectTest extends \PHPUnit_Framework_TestCase
      * Test.
      *
      * @dataProvider getInvalidOffsetCollection
+     *
      * @param mixed $invalid
      */
     public function testGetPropertyThrowsInvalidArgumentException($invalid)
@@ -169,6 +171,7 @@ class DataObjectTest extends \PHPUnit_Framework_TestCase
      * Test.
      *
      * @dataProvider getInvalidOffsetCollection
+     *
      * @param mixed $invalid
      */
     public function testIsPropertySetThrowsInvalidArgumentException($invalid)
@@ -237,10 +240,10 @@ class DataObjectTest extends \PHPUnit_Framework_TestCase
     public function getInvalidOffsetCollection()
     {
         return [
-            [ [] ],
-            [ null ],
-            [ (object)['foo' => 'bar'] ],
-            [ 23.45 ],
+            [[]],
+            [null],
+            [(object) ['foo' => 'bar']],
+            [23.45],
         ];
     }
 }

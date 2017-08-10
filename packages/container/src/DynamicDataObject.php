@@ -13,7 +13,7 @@ class DynamicDataObject extends DataObject implements DataObjectInterface
      *
      * @return mixed|null
      */
-    function __get($name)
+    public function __get($name)
     {
         return $this->getProperty($name);
     }
@@ -22,9 +22,9 @@ class DynamicDataObject extends DataObject implements DataObjectInterface
      * @see \Redfox\Container\DataObject::setProperty()
      *
      * @param string $name
-     * @param mixed $value
+     * @param mixed  $value
      */
-    function __set($name, $value)
+    public function __set($name, $value)
     {
         $this->setProperty($name, $value);
     }

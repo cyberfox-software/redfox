@@ -2,8 +2,8 @@
 
 namespace Redfox\Container\Tests\Unit\Support;
 
-use Redfox\Container\Exceptions\BadPropertyCallException;
 use Redfox\Container\Tests\Unit\Mocks\AccessorMock;
+use Redfox\Container\Exceptions\BadPropertyCallException;
 
 class AccessorTraitTest extends \PHPUnit_Framework_TestCase
 {

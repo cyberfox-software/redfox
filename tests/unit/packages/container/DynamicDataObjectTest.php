@@ -2,8 +2,8 @@
 
 namespace Redfox\Container\Tests\Unit\Support;
 
-use Redfox\Container\Contracts\DataObjectInterface;
 use Redfox\Container\DynamicDataObject;
+use Redfox\Container\Contracts\DataObjectInterface;
 
 class DynamicDataObjectTest extends \PHPUnit_Framework_TestCase
 {

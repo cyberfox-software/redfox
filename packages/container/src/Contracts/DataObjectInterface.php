@@ -33,7 +33,7 @@ interface DataObjectInterface
     public function flush();
 
     /**
-     * Get the raw data array
+     * Get the raw data array.
      *
      * @return array
      */

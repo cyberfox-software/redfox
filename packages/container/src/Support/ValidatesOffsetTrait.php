@@ -7,11 +7,12 @@ trait ValidatesOffsetTrait
     /**
      * Validates the designated offset:
      *  -  is a integer
-     *  - or  is a string
+     *  - or  is a string.
      *
-     * @param string|integer $offset
+     * @param string|int $offset
      *
      * @return bool
+     *
      * @throws \InvalidArgumentException if the designated offset is invalid
      */
     protected function validateOffset($offset)
