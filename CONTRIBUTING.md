@@ -8,8 +8,8 @@ Contributions are always welcome, no matter how large or small.
 **Requirements**
 
 ```
-php >= 5.6.18
-composer >= 1.1.0
+php >= 7.0.7
+composer >= 1.5.0
 ```
 
 **Setup**
