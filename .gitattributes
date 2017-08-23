@@ -1,9 +1,13 @@
+#
 # Common definitions
+###
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 
+#
 # Enforce Unix newlines
+###
 *.css   text eol=lf
 *.html  text eol=lf
 *.js    text eol=lf
@@ -14,9 +18,12 @@
 *.yml   text eol=lf
 *.php   text oel=lf
 
+#
 # Don't diff or textually merge source maps
+###
 *.map   binary
 
+#
 # Ignore files for export (packagist)
-
+###
 tests/* export-ignore

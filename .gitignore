@@ -71,4 +71,6 @@ atlassian-ide-plugin.xml
 # node_modules
 /node_modules/
 
+# this repository
 !/packages
+/build
