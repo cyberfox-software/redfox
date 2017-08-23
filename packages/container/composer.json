@@ -23,12 +23,12 @@
     "data"
   ],
   "require": {
-    "php": ">=5.6.18"
+    "php": ">=7.0.13"
   },
   "require-dev": {},
   "autoload": {
     "psr-4" : {
-      "Redfox\\Container\\": "src"
+      "Redfox\\Container\\": "src/"
     }
   },
   "autoload-dev": {}
