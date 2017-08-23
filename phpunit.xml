@@ -26,9 +26,9 @@
         <testsuite name="default">
             <directory>tests/unit/</directory>
         </testsuite>
-        <testsuite name="integration">
+        <!--<testsuite name="integration">
             <directory>tests/integration/</directory>
-        </testsuite>
+        </testsuite>-->
     </testsuites>
     <filter>
         <whitelist addUncoveredFilesFromWhitelist="true">

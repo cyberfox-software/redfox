@@ -16,3 +16,7 @@
 
 # Don't diff or textually merge source maps
 *.map   binary
+
+# Ignore files for export (packagist)
+
+tests/* export-ignore
