@@ -32,7 +32,7 @@ class DynamicDataObject extends DataObject implements DataObjectInterface
      * @param string $name
      * @param mixed  $value
      */
-    public function __set($name, $value)
+    public function __set($name, $value): void
     {
         $this->setProperty($name, $value);
     }

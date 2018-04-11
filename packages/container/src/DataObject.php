@@ -69,7 +69,7 @@ class DataObject implements DataObjectInterface
      * @throws \InvalidArgumentException                             if the designated property name is not valid
      * @throws \Redfox\Container\Exceptions\BadPropertyCallException if strict mode is on and the designated property does not exist or is not accessible
      */
-    public function setProperty($name, $value)
+    public function setProperty($name, $value): self
     {
         $this->validateOffset($name);
 
@@ -85,7 +85,7 @@ class DataObject implements DataObjectInterface
     /**
      * {@inheritdoc}
      */
-    public function isPropertySet($name)
+    public function isPropertySet($name): bool
     {
         return array_key_exists($name, $this->data);
     }
@@ -103,7 +103,7 @@ class DataObject implements DataObjectInterface
     /**
      * {@inheritdoc}
      */
-    public function getRawData()
+    public function getRawData(): array
     {
         return $this->data;
     }

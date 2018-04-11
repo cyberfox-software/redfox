@@ -33,7 +33,7 @@ interface DataObjectInterface
      *
      * @return bool
      */
-    public function isPropertySet($name);
+    public function isPropertySet($name): bool;
 
     /**
      * @return static
@@ -45,5 +45,5 @@ interface DataObjectInterface
      *
      * @return array
      */
-    public function getRawData();
+    public function getRawData(): array;
 }
