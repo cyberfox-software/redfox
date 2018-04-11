@@ -7,6 +7,11 @@ contains the essential & additional packages for the Redfox PHP framework.
 
 [![Build Status](https://travis-ci.org/cyberfox-software/redfox.svg)](https://travis-ci.org/cyberfox-software/redfox)
 
+## Requirements
+
+- php >= 7.1.0
+- composer >= 1.5.0
+
 ## Installation
 
 In order to get started, make sure [Composer](https://getcomposer.org) is installed.
@@ -19,7 +24,7 @@ composer require cyberfox/redfox
 
 ## Contributing
 
-Check out [CONTRIBUTING.md](CONTRIBUTING.md).
+Check out [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## License
 
