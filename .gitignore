@@ -68,9 +68,18 @@ atlassian-ide-plugin.xml
 /vendor
 /composer.lock
 
-# node_modules
-/node_modules/
+# Node.js
+/node_modules
 
-# this repository
+# This repository
 !/packages
 /build
+
+# Local development
+.bash_history
+.cache/
+.composer/
+.node-gyp/
+.yarn/
+.yarnrc
+yarn-error.log

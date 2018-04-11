@@ -2,12 +2,13 @@
 
 namespace Redfox\Container\Tests\Unit\Support;
 
+use PHPUnit\Framework\TestCase;
 use Redfox\Container\DataObject;
 use Redfox\Container\StrictDataObject;
 use Redfox\Container\Contracts\DataObjectInterface;
 use Redfox\Container\Exceptions\BadPropertyCallException;
 
-class DataObjectTest extends \PHPUnit_Framework_TestCase
+class DataObjectTest extends TestCase
 {
     /**
      * @var string

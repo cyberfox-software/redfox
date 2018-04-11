@@ -2,9 +2,10 @@
 
 namespace Redfox\Tests\Unit\Stores;
 
+use PHPUnit\Framework\TestCase;
 use Redfox\Container\Stores\ArrayStore;
 
-class ArrayCollectionTest extends \PHPUnit_Framework_TestCase
+class ArrayCollectionTest extends TestCase
 {
     /**
      * Test.
@@ -36,7 +37,7 @@ class ArrayCollectionTest extends \PHPUnit_Framework_TestCase
                         'key' => 'jjjKKLL123',
                     ],
                 ],
-            ]
+            ],
         ];
         $this->assertAttributeEquals($expected, 'data', $store);
 
@@ -158,7 +159,7 @@ class ArrayCollectionTest extends \PHPUnit_Framework_TestCase
         $this->assertAttributeEquals($expected, 'data', $store);
 
         $store->remember('foo', function () {
-           return 7567;
+            return 7567;
         });
         $this->assertAttributeEquals($expected, 'data', $store);
         $this->assertEquals('Bar', $store->get('foo'));
@@ -169,7 +170,5 @@ class ArrayCollectionTest extends \PHPUnit_Framework_TestCase
         });
         $this->assertAttributeEquals($expected, 'data', $store);
         $this->assertEquals(7567, $store->get('myKey'));
-
     }
-
 }

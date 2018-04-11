@@ -2,13 +2,13 @@
 <phpunit
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/4.8/phpunit.xsd"
+        bootstrap="vendor/autoload.php"
         backupGlobals="false"
         backupStaticAttributes="false"
         colors="true"
         convertErrorsToExceptions="true"
         convertNoticesToExceptions="true"
         convertWarningsToExceptions="true"
-        bootstrap="vendor/autoload.php"
         cacheTokens="false"
         forceCoversAnnotation="false"
         mapTestClassNameToCoveredClassName="true"
@@ -20,15 +20,11 @@
         stopOnRisky="false"
         timeoutForSmallTests="1"
         timeoutForMediumTests="10"
-        timeoutForLargeTests="60"
-        verbose="false">
+        timeoutForLargeTests="60">
     <testsuites>
-        <testsuite name="default">
-            <directory>tests/unit/</directory>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/unit</directory>
         </testsuite>
-        <!--<testsuite name="integration">
-            <directory>tests/integration/</directory>
-        </testsuite>-->
     </testsuites>
     <filter>
         <whitelist addUncoveredFilesFromWhitelist="true">

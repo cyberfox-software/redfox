@@ -2,9 +2,10 @@
 
 namespace Redfox\Tests\Unit\Collections;
 
+use PHPUnit\Framework\TestCase;
 use Redfox\Container\Collections\ArrayCollection;
 
-class ArrayCollectionTest extends \PHPUnit_Framework_TestCase
+class ArrayCollectionTest extends TestCase
 {
     /**
      * @var array

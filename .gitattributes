@@ -4,6 +4,7 @@
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
+*.js linguist-vendored
 
 #
 # Enforce Unix newlines
@@ -16,7 +17,9 @@
 *.md    text eol=lf
 *.svg   text eol=lf
 *.yml   text eol=lf
-*.php   text oel=lf
+*.php   text eol=lf
+*.xml   text eol=lf
+*.sql   text eol=lf
 
 #
 # Don't diff or textually merge source maps
@@ -27,3 +30,4 @@
 # Ignore files for export (packagist)
 ###
 tests/* export-ignore
+CHANGELOG.md export-ignore

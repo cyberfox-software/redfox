@@ -30,7 +30,7 @@ interface StoreInterface
      * ```
      *
      * @param string $keysupporting the usage of "dot" notation.
-     * @param mixed $value
+     * @param mixed  $value
      *
      * @return void
      */
@@ -41,7 +41,7 @@ interface StoreInterface
      *
      * The storage key is supporting the usage of "dot" notation.
      *
-     * @param string $key
+     * @param string     $key
      * @param mixed|null $default
      *
      * @return mixed|null
@@ -79,7 +79,7 @@ interface StoreInterface
      * Get an item from the store. If the item is not available, the return value of the callback will be stored
      * and returned.
      *
-     * @param string $key
+     * @param string   $key
      * @param callable $default
      *
      * @return mixed
