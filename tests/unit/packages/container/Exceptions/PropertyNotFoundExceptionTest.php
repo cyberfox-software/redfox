@@ -2,10 +2,11 @@
 
 namespace Redfox\Container\Tests\Unit\Exceptions;
 
+use PHPUnit\Framework\TestCase;
 use Redfox\Container\Exceptions\BadPropertyCallException;
 use Redfox\Container\Exceptions\PropertyNotFoundException;
 
-class PropertyNotFoundExceptionTest extends \PHPUnit_Framework_TestCase
+class PropertyNotFoundExceptionTest extends TestCase
 {
     /**
      * Test.

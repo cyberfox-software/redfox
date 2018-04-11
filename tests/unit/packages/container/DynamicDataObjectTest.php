@@ -2,10 +2,11 @@
 
 namespace Redfox\Container\Tests\Unit\Support;
 
+use PHPUnit\Framework\TestCase;
 use Redfox\Container\DynamicDataObject;
 use Redfox\Container\Contracts\DataObjectInterface;
 
-class DynamicDataObjectTest extends \PHPUnit_Framework_TestCase
+class DynamicDataObjectTest extends TestCase
 {
     /**
      * Test.

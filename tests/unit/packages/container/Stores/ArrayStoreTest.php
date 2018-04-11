@@ -2,9 +2,10 @@
 
 namespace Redfox\Tests\Unit\Stores;
 
+use PHPUnit\Framework\TestCase;
 use Redfox\Container\Stores\ArrayStore;
 
-class ArrayCollectionTest extends \PHPUnit_Framework_TestCase
+class ArrayCollectionTest extends TestCase
 {
     /**
      * Test.
