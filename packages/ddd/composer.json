@@ -1,0 +1,36 @@
+{
+  "name": "cyberfox/domain-driven-design",
+  "description": "",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "type": "library",
+  "version": "0.0.0",
+  "authors": [
+    {
+      "name": "Cyberfox Software Solutions e.U.",
+      "email": "office@cyberfox.at",
+      "homepage": "http://cyberfox.at"
+    },
+    {
+      "name": "Christian Graf",
+      "email": "fox@cyberfox.at"
+    }
+  ],
+  "keywords": [
+    "redfox",
+    "domain",
+    "module",
+    "entity",
+    "domain driven design"
+  ],
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4" : {
+      "Redfox\\DDD\\": "src/"
+    }
+  },
+  "autoload-dev": {}
+}
